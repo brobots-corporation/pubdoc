@@ -8,6 +8,10 @@
   * [DokuWiki](https://www.dokuwiki.org/)
 
 ## Установка и обновление
+Установка зависимостей
+```sh
+pip install -r requirements.txt
+```
 
 ## Использование скрипта
 ```
