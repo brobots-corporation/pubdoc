@@ -4,7 +4,8 @@
 
 ## Возможности
 * Работа в ОС семейства: Linux, Mac OS X;
-* Подерживается публикация на `dokuwiki`.
+* Подерживается публикация на:
+  * [DokuWiki](https://www.dokuwiki.org/)
 
 ## Установка и обновление
 
@@ -35,7 +36,7 @@ Options:
   --help                    Show this message and exit.
 ```
 
-### Пример использования скрипта в Linux
+#### Пример использования скрипта в Linux
 ```sh
 pubdoc.py dokuwiki \
     --target 'https://bla.bla.com' \
@@ -46,7 +47,7 @@ pubdoc.py dokuwiki \
     --data-dir-mask '**/*.md'
 ```
 
-### Пример использования скрипта в Linux c использованием переменных среды
+#### Пример использования скрипта в Linux c использованием переменных среды
 ```sh
 export PUBDOC_DOKUWIKI_TARGET='https://bla.bla.com'
 export PUBDOC_DOKUWIKI_USERNAME='Логин'
