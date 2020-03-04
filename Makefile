@@ -7,7 +7,6 @@ PYTHON=${VENV_NAME}/bin/python
 prepare_venv: $(VENV_NAME)/bin/activate
 
 $(VENV_NAME)/bin/activate: requirements.txt
-	#test -d $(VENV_NAME) || virtualenv -p python3 $(VENV_NAME)
 	test -d $(VENV_NAME) || python -m venv $(VENV_NAME)
 	${PYTHON} -m pip install -U pip
 	${PYTHON} -m pip install -r requirements.txt
@@ -15,5 +14,5 @@ $(VENV_NAME)/bin/activate: requirements.txt
 
 install: prepare_venv
 	
-run: prepare_venv
-	${PYTHON} pubdoc.py dokuwiki --namespace 'test' --data-dir './testdocs'
+run: prepare_venv	
+	${PYTHON} pubdoc.py dokuwiki --namespace 'Проект 1:Техническая документация' --data-dir './testdocs'
