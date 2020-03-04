@@ -16,4 +16,4 @@ $(VENV_NAME)/bin/activate: requirements.txt
 install: prepare_venv
 	
 run: prepare_venv
-	${PYTHON} pubdoc.py dokuwiki
+	${PYTHON} pubdoc.py dokuwiki --namespace 'test' --data-dir './testdocs'
