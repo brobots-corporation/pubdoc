@@ -3,6 +3,7 @@ from collections import namedtuple
 import pathlib
 import os
 import dokuwiki
+import sys
 
 document = namedtuple("Record", ['file_path', 'publish_path', 'original_path'])
 
@@ -38,7 +39,11 @@ class DokuWikiPub:
                     continue
 
                 self.log.info(" Loaded %s" % str(data_file))
-                lnk = relpath.split('/')
+                
+                delimeter = '/'
+                if sys.platform.startswith('win'):
+                    delimeter = '\\'
+                lnk = relpath.split(delimeter)
                 for i in range(len(lnk[:-2])):
                     lnk[i] = lnk[i].replace('.', '_')
                 original_path = ':'.join(lnk)
