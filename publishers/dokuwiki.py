@@ -60,7 +60,7 @@ class DokuWikiPub:
 
         # print(wiki.pages.list('/'))   
         for doc in self.docs:
-            with open(doc.file_path,'r') as fread:
+            with open(doc.file_path,'r', encoding='utf-8') as fread:
                 data = fread.read()
                 wiki.pages.set(doc.publish_path, data)
 
