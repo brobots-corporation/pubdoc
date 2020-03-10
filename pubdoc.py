@@ -54,15 +54,10 @@ def dokuwiki(target, username, password, data_dir, data_dir_mask, namespace):
         # Handle target environment that doesn't support HTTPS verification
         ssl._create_default_https_context = _create_unverified_https_context
 
-    #wiki = doku_wiki.DokuWiki(target, username, password)
-    # print(wiki.pages.list('/'))
-    #wiki.pages.set('start', '** Тест1 **')
-
     doku = dw.DokuWikiPub(log, target, username, password, namespace)
     
     # Read list of files and prepare to publish
     doku.from_dir(data_dir, data_dir_mask)
-    pprint(doku.docs)
 
     # Publish
     doku.publish()

@@ -15,4 +15,4 @@ $(VENV_NAME)/bin/activate: requirements.txt
 install: prepare_venv
 	
 run: prepare_venv	
-	${PYTHON} pubdoc.py dokuwiki --namespace 'Проект 1:Техническая документация' --data-dir './testdocs'
+	${PYTHON} pubdoc.py dokuwiki --namespace 'Проект 2:Техническая документация' --data-dir './testdocs'
