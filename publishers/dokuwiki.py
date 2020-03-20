@@ -30,10 +30,8 @@ class DokuWikiPub:
         for data_file in root.glob(mask):
             if data_file.is_file():
 
-                filename = os.path.basename(os.path.realpath(data_file))
                 relpath = os.path.relpath(data_file, path)
                 file_path = os.path.realpath(data_file)
-                name = os.path.splitext(filename)[0]
 
                 # Skiop file If file extension not in suppoted format
                 extension = file_path.split('.')[-1]
@@ -94,6 +92,3 @@ class DokuWikiPub:
                 if page['id'] not in pages_for_publish:
                     unused_pages.append(page['id'])   
         return unused_pages
-
-if __name__ == '__main__':
-    pass
