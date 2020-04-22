@@ -6,7 +6,8 @@ import os
 import pathlib
 
 from pprint import pprint
-import publishers.dokuwiki as dw
+
+import pubdoc.publishers.dokuwiki as dw
 
 def setlogger():
     log = logging.getLogger("pubdoc")

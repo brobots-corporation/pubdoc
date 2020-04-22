@@ -5,10 +5,11 @@
 # Игнорировать файлы Mac OS X
 .DS_Store
 
-# Игнорировать файлы pyinstaller
-build
-dist
+# Игнорировать файлы pyinstaller и сборки для pypi
+**/build
+**/dist
 objects_sonar.spec
+**/pubdoc.egg-info
 
 # Игнорировать байткод
 *.pyc
@@ -25,5 +26,14 @@ objects_sonar.spec
 **/.venv/
 venv
 
+# Игнорировать каталоги с xunit и coverage отчетами
+**/xunit-reports/
+**/coverage-reports/
+.coverage
+tests.xml
+coverage.xml
+
 # Игнорировать файл настройки правил flake8
 .flake8
+
+.dev.env
