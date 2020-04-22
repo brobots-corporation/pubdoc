@@ -12,6 +12,8 @@
 * Подерживается публикация на:
   * [DokuWiki](https://www.dokuwiki.org/)
 
+## Установка и обновление
+
 * Установить Python версии не ниже 3.6;
 * Установить пакет d2doc из PyPI командой:
     ```sh
@@ -36,7 +38,7 @@ Commands:
 ### Публикация на DokuWiki
 Команда `dokuwiki`
 ```
-Usage: pubdoc.py dokuwiki [OPTIONS]
+Usage: pubdoc dokuwiki [OPTIONS]
 
 Options:
   -t, --target TEXT         Dokuwiki url.  [required]
@@ -50,7 +52,7 @@ Options:
 
 #### Пример использования скрипта в Linux
 ```sh
-pubdoc.py dokuwiki \
+pubdoc dokuwiki \
     --target 'https://bla.bla.com' \
     --username 'Логин' \
     --password 'Пароль' \
@@ -68,5 +70,5 @@ export PUBDOC_DOKUWIKI_NAMESPACE='Проект 1:Техническая доку
 export PUBDOC_DOKUWIKI_DATA_DIR='./testdocs'
 export PUBDOC_DOKUWIKI_DATA_DIR_MASK='**/*.md'
 export PUBDOC_LOG_LEVEL='DEBUG'
-pubdoc.py dokuwiki 
+pubdoc dokuwiki 
 ```
