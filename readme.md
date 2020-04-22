@@ -2,7 +2,10 @@
 # pubdoc
 Публикация документации
 
-[![Build Status](https://travis-ci.org/brobots-corporation/pubdoc.svg?branch=master)](https://travis-ci.org/brobots-corporation/pubdoc) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=pubdoc&metric=alert_status)](https://sonarcloud.io/dashboard?id=pubdoc)
+[![Build Status](https://travis-ci.org/brobots-corporation/pubdoc.svg?branch=master)](https://travis-ci.org/brobots-corporation/pubdoc) ![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=pubdoc&metric=alert_status)](https://sonarcloud.io/dashboard?id=pubdoc)
+[![](https://img.shields.io/pypi/v/pubdoc.svg?style=flat&color=blue)](https://pypi.org/project/pubdoc/)
+[![](https://img.shields.io/pypi/pyversions/pubdoc.svg)](https://pypi.python.org/pypi/pubdoc/)
+[![](https://img.shields.io/badge/license-GPL3-yellow.svg)](https://github.com/brobots-corporation/pubdoc/blob/master/LICENSE)
 
 ## Возможности
 * Работа в ОС семейства: `Linux`, `Mac OS X`, `Windows`;
